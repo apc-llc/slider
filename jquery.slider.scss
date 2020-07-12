@@ -109,7 +109,7 @@
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(img/rotator-black.png) no-repeat;
+	background: url(../img/rotator-black.png) no-repeat;
 }
 
 .mask {
@@ -128,7 +128,7 @@
 .mask.move {
 	width: 40px;
 	left: 0;
-	background: url(img/timer-black.png) repeat 0 0;
+	background: url(../img/timer-black.png) repeat 0 0;
 }
 .pause {
 	position: absolute;
@@ -138,11 +138,11 @@
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(img/pause-black.png) no-repeat;
+	background: url(../img/pause-black.png) no-repeat;
 	opacity: 0;
 
 	&.active {
-		background: url(img/pause-black.png) no-repeat 0 -40px;
+		background: url(../img/pause-black.png) no-repeat 0 -40px;
 	}
 }
 

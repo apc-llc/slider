@@ -12,6 +12,13 @@ module.exports = function (grunt) {
 			'<%= grunt.template.today("yyyy-mm-dd") %> */'
 		},
 
+		copy: {
+			jquery: {
+				src: 'node_modules/jquery/dist/jquery.min.js',
+				dest: 'build/jquery.min.js'
+			}
+		},
+
 		jshint: {
 			all: [
 				'Gruntfile.js',
@@ -32,7 +39,8 @@ module.exports = function (grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'build/jquery.slider-<%= pkg.version %>.min.css': 'jquery.slider.scss'
+					'build/jquery.slider-<%= pkg.version %>.min.css': 'jquery.slider.scss',
+					'build/normalize.css' : 'node_modules/normalize.css/normalize.css'
 				}
 
 			}
@@ -63,12 +71,13 @@ module.exports = function (grunt) {
 	});
 
 	// Load some stuff
-	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task
-	grunt.registerTask('default', ['jshint', 'sass', 'uglify']);
+	grunt.registerTask('default', ['jshint', 'copy', 'sass', 'uglify']);
 
 };

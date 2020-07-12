@@ -22,7 +22,11 @@
 		"url": "https://github.com/drublic/slider/issues"
 	},
 	"license": "MIT",
-	"dependencies": {},
+	"dependencies": {
+		"grunt-contrib-copy": "^1.0.0",
+		"jquery": "^3.5.1",
+		"normalize.css": "^8.0.1"
+	},
 	"devDependencies": {
 		"grunt": "^1.2.1",
 		"grunt-contrib-jshint": "^2.1.0",
