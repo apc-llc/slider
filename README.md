@@ -1,5 +1,11 @@
-# Wrecking Slide v0.5.0 – A jQuery Slider
+# A jQuery Slider
 
 This is a jQuery slider.
 
-More docs to come.
+## Building
+
+```
+brew install npm
+npm install
+grunt
+```

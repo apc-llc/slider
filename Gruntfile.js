@@ -2,6 +2,8 @@ module.exports = function (grunt) {
 
 	'use strict';
 
+	const sass = require('node-sass');
+
 	// Project configuration.
 	grunt.initConfig({
 		pkg: require('./package'),
@@ -21,6 +23,10 @@ module.exports = function (grunt) {
 		},
 
 		sass: {
+			options: {
+				implementation: sass,
+				sourceMap: true
+			},
 			dist: {
 				options: {
 					style: 'compressed'
@@ -58,7 +64,7 @@ module.exports = function (grunt) {
 
 	// Load some stuff
 	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 

@@ -4,13 +4,16 @@
 	"description": "A content slider",
 	"version": "0.5.0",
 	"homepage": "",
-	"authors": [{
-		"name": "ZURB",
-		"url": "http://zurb.com/"
-	}, {
-		"name": "Hans Christian Reinl",
-		"url": "http://drublic.de/"
-	}],
+	"authors": [
+		{
+			"name": "ZURB",
+			"url": "http://zurb.com/"
+		},
+		{
+			"name": "Hans Christian Reinl",
+			"url": "http://drublic.de/"
+		}
+	],
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:drublic/slider.git"
@@ -21,11 +24,12 @@
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"grunt": "0.4.x",
-		"grunt-contrib-jshint": "0.4.3",
-		"grunt-contrib-uglify": "0.2.0",
-		"grunt-contrib-watch": "0.3.1",
-		"grunt-contrib-sass": "0.3.0"
+		"grunt": "^1.2.1",
+		"grunt-contrib-jshint": "^2.1.0",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-contrib-uglify": "^4.0.1",
+		"grunt-sass": "^3.1.0",
+		"node-sass": "^4.14.1"
 	},
 	"keywords": []
 }
